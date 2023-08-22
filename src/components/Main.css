@@ -1,0 +1,36 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.meal-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal-info h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.meal-info h2 {
+    color: #d49726;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 58px;  
+    width: 70%;  
+    text-align: center; 
+    cursor: pointer; 
+}
+
+.meal-img {
+    width: 45%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 5rem 5rem;
+}
+

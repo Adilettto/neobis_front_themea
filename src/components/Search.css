@@ -1,0 +1,35 @@
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.search-bar h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.search-input {
+  width: 17rem;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 3px;
+  font-family: Raleway;
+  height: 100%;
+  outline: none;
+}
+
+.search-btn {
+  background: #d49726;
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  padding:  1rem;
+  width: 5rem;
+}
