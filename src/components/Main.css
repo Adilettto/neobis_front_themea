@@ -16,6 +16,11 @@
     font-weight: 700;
 }
 
+.meal-name {
+    text-decoration: none;
+    color: #d49726;
+}
+
 .meal-info h2 {
     color: #d49726;
     font-size: 44px;

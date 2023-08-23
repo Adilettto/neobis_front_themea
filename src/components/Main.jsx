@@ -9,7 +9,7 @@ const Main = () => {
     <div className="main">
       <div className="meal-info">
         <h3>Meal of the day</h3>
-        <h2>Grilled Mac and Cheese Sandwich</h2>
+        <h2><a className="meal-name" href="/recipe">Grilled Mac and Cheese Sandwich</a></h2>
         <p>Pasta | American</p>
       </div>
       <img src={ratataImg} alt="bread" className="meal-img" />

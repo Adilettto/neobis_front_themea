@@ -4,7 +4,7 @@ import "../App.css";
 
 const Header = () => {
   return (<div className="header">
-        <h1>The Meal</h1>
+        <h1><a className="header-name" href="/home">The Meal</a></h1>
     </div>)
 };
 

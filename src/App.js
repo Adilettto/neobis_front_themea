@@ -1,14 +1,18 @@
 import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import Search from './components/Search';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from './pages/Home';
+import Recipe from './pages/Recipe';
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Search />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/home' element={<Home />}/>
+          <Route path='/recipe' element={<Recipe />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
