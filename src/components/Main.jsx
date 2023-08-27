@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "../App.css";
 import "./Main.css";
 
-import ratataImg from "../assets/ratata.jpg"
 
 const Main = () => {
+  const [mealData, setMealData] = useState(null);
+
+  useEffect(() => {
+    axios("https://www.themealdb.com/api/json/v1/1/random.php")
+      .then(({ data }) => setMealData(data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className="main">
+    {mealData && (
       <div className="meal-info">
         <h3>Meal of the day</h3>
-        <h2><a className="meal-name" href="/recipe">Grilled Mac and Cheese Sandwich</a></h2>
-        <p>Pasta | American</p>
+        <h2>
+          <a className="meal-name" href="/recipe">
+            {mealData.meals[0].strMeal}
+          </a>
+        </h2>
+        <p>{mealData.meals[0].strCategory} | {mealData.meals[0].strArea}</p>
       </div>
-      <img src={ratataImg} alt="bread" className="meal-img" />
+    )}
+      
+    {mealData && (
+      <img src={mealData.meals[0].strMealThumb} alt="bread" className="meal-img" />
+    )} 
     </div>
   );
 };
