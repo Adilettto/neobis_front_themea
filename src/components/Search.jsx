@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
-import ratataImg from "../assets/ratata.jpg";
 
 const Search = () => {
   const [searchInput, setSearchInput] = useState("");
@@ -43,17 +42,20 @@ const Search = () => {
       </div>
       <div className="meal-list">
         {loading && <p>Loading...</p>}
-        {!loading && 
+        {!loading &&
           filteredMeals.map((meal) => (
             <div className="meal-item" key={meal.idMeal}>
               <img src={meal.strMealThumb} alt="meal" />
               <div className="meal-name-short">
-                <h3>{meal.strMeal}</h3>
-                <p>{meal.strCategory} | {meal.strArea}</p>
+                <a href={`/recipe/${meal.idMeal}`}>
+                  <h3>{meal.strMeal}</h3>
+                </a>
+                <p>
+                  {meal.strCategory} | {meal.strArea}
+                </p>
               </div>
             </div>
-          ))
-        }
+          ))}
       </div>
     </div>
   );

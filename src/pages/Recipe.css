@@ -1,26 +1,61 @@
 .meal-card {
-    margin: 5rem;
-    display: flex;
-    justify-content: space-around;
+  margin: 3rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .meal-data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
 }
 
 .meal-name {
-    font-size: 2.5rem;
-    letter-spacing: 1.5px;
-    line-height: 58px;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  line-height: 58px;
 }
 
 .meal-card img {
-    width: 50%;
-    height: 60%;
-    border-radius: 2rem;
+  width: 40%;
+  height: 60%;
+  border-radius: 2rem;
+}
+
+.instruction {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.article {
+  margin: 2rem;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+
+.youtube {
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 1rem 1rem 0;
+  outline: none;
+  background-color: red;
+  border-radius: 0.5rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.ingredients {
+  list-style: none;
+  text-align: left;
+}
+
+.ingredients li {
+  margin-top: 1rem;
+}
+
+.measures {
+  font-weight: 700;
 }

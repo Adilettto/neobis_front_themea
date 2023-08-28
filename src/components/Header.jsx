@@ -3,9 +3,15 @@ import "./Header.css";
 import "../App.css";
 
 const Header = () => {
-  return (<div className="header">
-        <h1><a className="header-name" href="/home">The Meal</a></h1>
-    </div>)
+  return (
+    <div className="header">
+      <h1>
+        <a className="header-name" href="/home">
+          The Meal
+        </a>
+      </h1>
+    </div>
+  );
 };
 
 export default Header;

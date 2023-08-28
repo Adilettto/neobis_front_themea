@@ -1,15 +1,15 @@
 .header {
-    background-color: #d49726;
-    height: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #d49726;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-name {
-    font-size: 28px;
-    font-weight: 700;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
 }
